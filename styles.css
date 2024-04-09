@@ -1,1 +1,15 @@
-/* Пиши стили тут */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating .star {
+    display: inline-block;
+    width: 10vh;
+    aspect-ratio: auto;
+}
+
+.rating .star:hover, .rating .star:hover ~ .star {
+    background-image: url('img/star.svg');
+}
